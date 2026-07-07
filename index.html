@@ -1,42 +1,197 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Space</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        body {
+            background-color: #fff9f0;
+            color: #333333;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff5a5f;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #328cc1;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            border: 4px solid #ff5a5f;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder-text {
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin: 0 0 10px 0;
+        }
+
+        .content-box {
+            background-color: white;
+            border: 3px solid #ff5a5f;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .about-box {
+            background-color: #fff0f5;
+            border-color: #ff5a5f;
+        }
+
+        .skills-box {
+            background-color: #e8f5e9;
+            border-color: #4caf50;
+        }
+
+        .project-item {
+            background-color: #f1f5f9;
+            border-left: 5px solid #328cc1;
+            margin-bottom: 15px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .project-item h4 {
+            margin: 0 0 5px 0;
+            color: #328cc1;
+        }
+
+        .project-item p {
+            margin: 0;
+        }
+
+        .contact-box {
+            background-color: #e0f2fe;
+            border-color: #328cc1;
+        }
+
+        footer {
+            background-color: #222222;
+            color: #bbbbbb;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h2>Wojtek</h2>
-    </header>    
-    
-    <section id="biography">
-        <img src="pfp.jpg" alt="Profile Picture">
-        <h1>Biography</h1>
-        <p>Hello my name is Wojtek and I am passionate in programming and building websites. My journey started when I wanted to learn how develop websites, and I've been hooked ever since.</p>
-    </section>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section id="hobbies">
-        <h1>Hobbies</h1>
-        <ul>
-            <li>Programming</li>
-            <li>Sports</li>
-            <li>Cycling</li>
-            <li>Relaxing</li>
-        </ul>
-    </section>
+    <div class="hero">
+        <div class="profile-image">
+            <span class="placeholder-text">
+                <img src="pfp.jpg" alt="Profile Picture">
+            </span>
+        </div>
+        <h2>Welcome to My Space</h2>
+        <p>Motion Designer & Brand Strategist creating playful interactive experiences.</p>
+    </div>
 
-    <section id="info">
-        <h1>Contact Info</h1>
-        <p>Email: john@example.com</p>
-        <p>phone: 123 456 789</p>
-    </section>
+    <div id="about" class="content-box about-box">
+        <h3>About Me</h3>
+        <p>I am Wojtek, the guy who works at the intersection of colorful aesthetics and strategic brand design. I help small businesses find their voice through bright vector illustrations, smooth animation, and engaging digital campaigns.</p>
+    </div>
+
+    <div id="skills" class="content-box skills-box">
+        <h3>Skills</h3>
+        <p>PHP &bull; CSS &bull; HTMl &bull; Git &bull; Bootstrap</p>
+    </div>
+
+    <div id="projects" class="content-box">
+        <h3>Projects</h3>
+        
+        <a href="restaurant/index.html">
+            <div class="project-item">
+                <h4>Restaurant Website</h4>
+                <p>Responsive food website</p>
+            </div>
+        </a>
+        
+
+        <a href="profile page/index.html">
+            <div class="project-item">
+                <h4>Portfolio</h4>
+                <p>Personal portfolio with responsive layout.</p>
+            </div>
+        </a>
+        
+
+        <div class="project-item">
+            <h4>Landing Page</h4>
+            <p>Simple business landing page.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="content-box contact-box">
+        <h3>Contact</h3>
+        <p>Email: create@studioneon.com</p>
+        <p>Hours: Mon - Fri, 9am - 5pm EST</p>
+        <p>Location: Austin, TX</p>
+    </div>
 
     <footer>
-        <p>&copy; Wojtek| All rights reserved</p>
+        <p>&copy; 2026 My Portfolio</p>
     </footer>
-    
+
 </body>
 </html>
