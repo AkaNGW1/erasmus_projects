@@ -1,0 +1,95 @@
+* {
+    font-family: arial;
+}
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #4A7C7A;
+    padding: 5px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: #2B2B2B;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#contact {
+    background-color: #C85A32;
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#contact_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #2B2B2B;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+#menu,#hero,#about {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+}
+
+#hero {
+    background-color: #E1AD01;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.items {
+    border: 5px solid #1dccc6;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px 40px 10px 40px;
+    width: 220px;
+    height: 160px;
+    background-color: #4A7C7A;
+    color: white;
+}
+
+.items:hover {
+    height: 180px;
+    width: 250px;
+    font-size: 120%;
+    transition: 0.5s;
+}
+
+#menu {
+    background: linear-gradient(to bottom, #E1AD01, #C85A32);
+    text-align: center;
+    color: whitesmoke;
+    height: 250px;
+    width: 100%;
+}
+
+#about {
+    background-color: #C85A32;
+    text-align: center;
+    color: whitesmoke;
+}
